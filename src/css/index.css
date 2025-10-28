@@ -1,0 +1,284 @@
+/*P. Elena Maddox, CSCE 242*/
+
+/*Structures*/
+:root {
+    --primary-color:#d22631;    /*color of red in portuguese flag*/
+    --secondary-color:#005d33;  /*color of green in portuguese flag*/
+    --third-color:#fff81d;      /*color of yellow in portuguese flag*/
+}
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color:beige;
+}
+
+h2, h3, h4{
+  color:var(--secondary-color);
+}
+
+.flex-item{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  align-items: center;
+  margin:0;
+}
+.flex-item img{
+  max-width:500px;
+}
+
+.flex-item h3{
+  text-align:center;
+}
+
+@media(max-width: 768px) {
+  .header{
+    position:relative;
+  }
+  
+  #main-nav{
+    position:absolute;
+    right:40px;
+    margin-top:50px;
+    margin-bottom:5px;
+  }
+  #main-nav ul {
+    flex-direction: column;
+    gap: 2px;
+  }
+  #main-nav ul li {
+    width: 100%;
+    padding: 2px 0;
+  }
+
+  #main-nav ul li a{
+    font-size:10px;
+  }
+
+  #main-header{
+    height:250px;
+  }
+
+  #logo{
+  width:300px;
+  height:auto;
+  position:absolute;
+  left: 50%;
+  transform: translate(-112%, -25%);
+  }
+
+  #menu #logo{
+      transform: translate(-112%, -25%);
+  }
+}
+/*larger screens changes*/
+@media (min-width: 768px) {
+  
+  /*main page*/
+  .welcome {
+    display:flex;
+    flex-direction: row;
+  }
+
+  .welcome p{
+    justify-content: space-between;
+    padding:20px;
+  }
+  .welcome{
+    display:flex;
+    flex: 1;
+  }
+
+  .welcome-image {
+    flex:1;
+  }
+
+  .welcome-image img {
+    width: 100%;
+    max-width:100%;
+    height:auto;
+    display:block;
+  }
+
+  .reserve-btn {
+    position:absolute;
+    left:50%;
+    bottom:-10%;
+    transform: translate(-50%, -50%);
+}
+  /* Social section */
+  .social {
+    padding:40px;
+  }
+
+  .social-content {
+    flex-direction: row;
+    gap:40px;
+  }
+
+  .social-links {
+    flex: 1;
+  }
+
+  .social-images {
+    flex:2;
+    flex-direction:row;
+  }
+
+  .social-images img {
+    max-width:500px;
+    margin-right:100px;
+  }
+
+  #logo{
+    width:300px;
+    height:auto;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /*menu page*/
+  .menu-list{
+    padding:10px;
+    flex-direction:row;
+  }
+
+  .menu-columns{
+    display:flex;
+    flex-direction:column;
+    padding:15px;
+  }
+
+  .menu-list h3{
+    font-size:16px;
+    width:7%;
+  }
+
+  .menu-item{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 80%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding-right:50px;
+  }
+
+  .menu-image-section{
+    display:flex;
+    flex-direction:row;
+    padding-left:20px;
+  }
+
+  .menu-text-section,
+  .menu-image-section {
+    flex: 1;
+  }
+
+  #bev-list{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  #bev-list h3{
+    text-align: center;
+  }
+
+  #alcohol-list{
+    padding:20px;
+    margin-left:25%;
+  }
+  #sangria{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    width:300px;
+    height:auto;
+  }
+
+  /* fado*/
+  #fado{
+    display:flex;
+    flex-direction:row;
+  }
+  #fado > section {
+  margin: 0;
+  width: auto; 
+  flex: 1 1 0; 
+  }
+  #video{
+    width:250px;
+    height:auto;
+    border: 1px solid black;
+    margin-left:25%;
+  }
+
+  #fado-image{
+    margin-right:15%;
+  }
+
+  #lists{
+  display:flex;
+  flex-direction:row;
+  text-align:left;
+  }
+#list1, #list2{
+  margin-right:30px;
+}
+  #list1 ol, #list2 ol{
+    padding-left:0;
+    margin-left:0;
+  }
+  
+
+  /*about*/
+  .started p{
+    max-width: 50%;
+  }
+
+  .about-images{
+    max-width:40%;
+  }
+  .started{
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+  }
+
+  #p1{
+    text-align:left;
+  }
+
+  #p2{
+    text-align:right;
+    margin-right:auto;
+  }
+
+  #about-columns{
+    display:flex;
+    flex-direction:row;
+  }
+
+  .flex-item{
+    padding:50px;
+    width:100%;
+    margin:0 auto;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+  }
+
+  #time-table{
+    display:flex;
+    flex-direction:row;
+    margin:0 auto;
+    margin-left:30%;
+    text-align:center;
+  }
+}
+  

@@ -1,0 +1,125 @@
+:root {
+    --primary-color:#d22631;    /*color of red in portuguese flag*/
+    --secondary-color:#005d33;  /*color of green in portuguese flag*/
+    --third-color:#fff81d;      /*color of yellow in portuguese flag*/
+}
+
+#menu{
+  position:relative;
+}
+
+#menu #main-nav{
+  bottom:25px;
+}
+.menu-list h3{
+  color:var(--secondary-color);
+  font-size:18px;
+}
+#bev-list h3{
+  font-size:18px;
+  color:var(--secondary-color);
+}
+.menu-list{
+  display:flex;
+  flex-direction:column;
+  margin: 0 auto;
+}
+
+.menu-columns{
+  display:flex;
+  flex-direction:column;
+}
+
+#bev-list{
+  display:flex;
+  flex-direction:column;
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+}
+
+#alcohol-list{
+  display:flex;
+  flex-direction:column;
+}
+
+#alcohol-list h4{
+  margin-left:10%;
+}
+#content-list{
+  display:flex;
+  flex-direction:row;
+}
+
+#alcohol-list ol{
+  display:grid;
+}
+
+
+
+@media(max-width: 768px) {
+
+  #logo{
+  width:300px;
+  height:auto;
+  position:absolute;
+  left: 50%;
+  transform: translate(-112%, -25%);
+  }
+
+  #menu #logo{
+      transform: translate(-112%, -25%);
+  }
+}
+/*larger screens changes*/
+@media (min-width: 768px) {
+
+  #logo{
+    width:300px;
+    height:auto;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .menu-list{
+    padding:10px;
+    flex-direction:column;
+  }
+
+  .menu-columns{
+    display:flex;
+    flex-direction:column;
+    padding:15px;
+  }
+
+  .menu-list h3{
+    font-size:16px;
+    width:7%;
+  }
+
+  #bev-list{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  #bev-list h3{
+    text-align: center;
+  }
+
+  #alcohol-list{
+    padding:20px;
+    margin-left:25%;
+  }
+  #sangria{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    width:300px;
+    height:auto;
+  }
+
+}
+  
