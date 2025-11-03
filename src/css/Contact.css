@@ -1,19 +1,56 @@
-.contact{
-  text-align:center;
-  padding-left:80px;
+#main-content {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100%;
 }
 
-#name, #email, #message{
-  width:250px;
-  text-align:right;
+#main-content ol {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
 }
 
-#input{
-   display: flex; 
-   gap: 8px; 
-   margin: 0 auto;
-   margin-left:auto;
-   margin-right:auto;
-
+.contact {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
-  
+
+#contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  display: inline-block;
+  text-align: center;
+}
+
+#contact li {
+  text-align: center;
+  padding: 5px 0;
+  margin: 0;
+}
+
+#time-table {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+#about-columns {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.flex-item {
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}

@@ -31,23 +31,24 @@
 }
 
 #main-nav ul {
-  list-style:none;
-  padding:0;
-  margin:0;
-  display:flex;
-  gap:30px;
-  position:absolute;
-  bottom:-60px;
-  width:100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  bottom: -60px;
+  width: 100%;
 }
 
-#main-nav ul li{
-  flex:1;
-  text-align:center;
+#main-nav ul li {
+  flex: 1;
+  text-align: center;
 }
+
 #main-nav a {
-  text-decoration:none;
-  color:white;
+  text-decoration: none;
+  color: white;
   display: block;
   font-size: 1.5rem;
   padding: 20px 0;
@@ -55,10 +56,42 @@
 }
 
 #main-nav a:hover {
-  color:tan;
+  color: tan;
 }
 
-ol{
-  list-style-type:none;
+ol {
+  list-style-type: none;
 }
 
+/* Hide toggle button by default on larger screens */
+#toggle-nav {
+  display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  #toggle-nav {
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    z-index: 100;
+    color: white;
+    font-size: 32px;
+    background-color: #d226311A;
+    padding: 7px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+
+  #main-nav ul {
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+  }
+
+  .hide-small {
+    display: none !important;
+  }
+}

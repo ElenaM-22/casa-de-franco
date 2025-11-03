@@ -1,0 +1,33 @@
+#slideshow{
+    position:relative;
+}
+
+#slideshow img {
+    max-width:100%;
+}
+
+.arrow{
+    color:#005d33;
+    text-decoration:none;
+    size:64px;
+    position:absolute;
+    top:50%;
+    background:lightgray;
+    border-radius:3px;
+    padding:5px;
+}
+
+#right-arrow{
+    right:3%;
+}
+
+#left-arrow{
+    left:3%;
+}
+
+#slideshow img{
+    max-width:90%;
+    display:block;
+    margin:auto;
+    padding:20px;
+}

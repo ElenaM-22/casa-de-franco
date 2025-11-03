@@ -1,6 +1,6 @@
 import './../css/index.css';
 import "./../css/Home.css";
-import welcomePic from "../images/gpt-fado.png";
+import Slideshow from "./../components/Slideshow";
 import tartPic from "../images/tart.jpg";
 import socialPic from "../images/social2.jpg";
     function Home() {
@@ -14,7 +14,7 @@ import socialPic from "../images/social2.jpg";
                     <button class="reserve-btn"><a href="contact.html">Reserve Your Table</a></button>
                 </div>
                 <div class="welcome-image">
-                    <img src={welcomePic}/>
+                    <Slideshow />
                 </div>
             </section>
 

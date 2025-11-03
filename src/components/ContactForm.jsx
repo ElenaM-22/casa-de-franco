@@ -1,4 +1,5 @@
 import "./../css/index.css";
+import "./../css/ContactForm.css";
 import { useState } from 'react';
 
 export default function ContactForm() {
@@ -30,11 +31,20 @@ export default function ContactForm() {
   return (
     <div>
       <form onSubmit={onSubmit}>
-        <input type="text" name="name" required/>
-        <input type="email" name="email" required/>
-        <textarea name="message" required></textarea>
+        <section>
+            <label for="name">Name:</label>
+            <input id ="name" class = "input" type="text" name="Your Name:" required/>
+        </section>
+        <section>
+            <label for="email">Your email address:</label>
+            <input id="email" class = "input" type="email" name="Your Email" required/>
+        </section>
+        <section>
+            <label for="message">What would you like to tell us?</label>
+            <textarea id="message" class = "input" name="What would you like to tell us?" required></textarea>
+        </section>
 
-        <button type="submit">Submit Form</button>
+        <button type="submit">Submit Feedback</button>
 
       </form>
       <span>{result}</span>

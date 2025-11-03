@@ -1,0 +1,32 @@
+.contact{
+  text-align:center;
+  padding-left:80px;
+}
+
+#name, #email, #message{
+  width:200px;
+}
+
+#name{
+    background-color:#d226311A;
+}
+
+#email{
+    background-color:#fff81d1A;
+}
+
+#message{
+    background-color:#005d331A;
+    border: 2px solid black;
+}
+
+.input{
+   display: flex; 
+   flex-direction:column;
+   gap: 8px; 
+   margin: 0 auto;
+   margin-left:auto;
+   margin-right:auto;
+
+}
+  

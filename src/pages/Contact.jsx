@@ -1,7 +1,8 @@
 import "./../css/index.css";
 import "./../css/Contact.css";
+import Slideshow from "./../components/Slideshow";
+import ContactForm from "./../components/ContactForm";
 import fado1 from "./../images/gpt-fado.png";
-import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
     return (
@@ -11,18 +12,19 @@ const Contact = () => {
                     <div className="flex-item">
                         <h3>Contact Information</h3>
                         <div id="time-table" className="contact">
-                            <ol>
+                            <ol id="contact">
                                 <li>Telephone: +1(000)000-0000</li>
                                 <li>Catering Inquiries: some_email@casadefranco.com</li>
-                                <li>
-                                    <ContactForm />
-                                </li>
                             </ol>
                         </div>
+                        <h3>Let us know how we're doing!</h3>
+                        <section className="one">
+                                    <ContactForm />
+                        </section>
                     </div>
                 </li>
             </ol>
-            <img id="fado1" src={fado1} alt="Fado" />
+            <Slideshow />
         </main>
     );
 };
