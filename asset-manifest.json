@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/casa-de-franco/static/css/main.1e3b3add.css",
-    "main.js": "/casa-de-franco/static/js/main.8ec119e2.js",
+    "main.css": "/casa-de-franco/static/css/main.9c516fb6.css",
+    "main.js": "/casa-de-franco/static/js/main.6de13f88.js",
     "static/media/restaurant2.png": "/casa-de-franco/static/media/restaurant2.9f848957ae31dea2b08d.png",
     "static/media/gpt-fado.png": "/casa-de-franco/static/media/gpt-fado.3449f798d40859855a3f.png",
     "static/media/restaurant1.png": "/casa-de-franco/static/media/restaurant1.f2a2f490dc993a65929f.png",
@@ -10,11 +10,11 @@
     "static/media/logo.png": "/casa-de-franco/static/media/logo.6e3265875096c00c9bf6.png",
     "static/media/tart.jpg": "/casa-de-franco/static/media/tart.5959cdeb5bed03c6f806.jpg",
     "index.html": "/casa-de-franco/index.html",
-    "main.1e3b3add.css.map": "/casa-de-franco/static/css/main.1e3b3add.css.map",
-    "main.8ec119e2.js.map": "/casa-de-franco/static/js/main.8ec119e2.js.map"
+    "main.9c516fb6.css.map": "/casa-de-franco/static/css/main.9c516fb6.css.map",
+    "main.6de13f88.js.map": "/casa-de-franco/static/js/main.6de13f88.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e3b3add.css",
-    "static/js/main.8ec119e2.js"
+    "static/css/main.9c516fb6.css",
+    "static/js/main.6de13f88.js"
   ]
 }
